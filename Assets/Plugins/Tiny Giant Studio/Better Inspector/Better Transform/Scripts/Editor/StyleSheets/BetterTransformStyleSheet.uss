@@ -1,0 +1,133 @@
+.customToolbar {
+    margin-left: 5px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: row;
+}
+
+.customToolbar .unity-button {
+    -unity-text-align: middle-center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.unity-toolbar {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.prefabOverrideMark {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 6px;
+    height: 21px;
+    background-color: rgb(5, 147, 224);
+}
+
+.defaultPrefabOverrideMark {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 6px;
+    height: 21px;
+    background-color: rgb(79, 79, 79);
+}
+
+#InlineSizeButtonsGroupBox .toolbarComboButton #Label {
+}
+
+#InlineSizeButtonsGroupBox .toolbarComboButton #Icon {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 15px;
+    max-width: 15px;
+    min-width: 15px;
+    height: 15px;
+    max-height: 15px;
+    min-height: 15px;
+}
+
+#InlineSizeButtonsGroupBox .toolbarComboButton {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 15px;
+}
+
+#InlineSizeGroupBox .unity-popup-field {
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#InlineSizeGroupBox .unity-vector3-field {
+}
+
+.animatedField {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.animatedField .unity-base-text-field__input {
+    background-color: rgb(23, 36, 42);
+}
+
+.animationRecordingField {
+}
+
+.animationRecordingField .unity-base-text-field__input {
+    background-color: rgb(42, 24, 23);
+}
+
+.unity-popup-field-shortened {
+    width: 20px;
+}
+
+.unity-popup-field-shortened .unity-popup-field__input {
+    width: 20px;
+    flex-shrink: 1;
+    max-width: 20px;
+    min-width: 20px;
+}
+
+.unity-popup-field-shortened .unity-popup-field__input .unity-base-popup-field__text {
+    display: none;
+}

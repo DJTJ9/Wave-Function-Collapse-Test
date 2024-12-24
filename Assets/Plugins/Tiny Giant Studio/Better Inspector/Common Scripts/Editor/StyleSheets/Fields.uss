@@ -1,0 +1,64 @@
+.unity-text-field__label {
+    min-width: 4px;
+    -unity-text-align: middle-left;
+    width: 4px;
+}
+
+.unity-composite-field__field {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.unity-composite-field__input {
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+.unity-vector3-field {
+    flex-shrink: 1;
+}
+
+.unity-vector3-field__label {
+    -unity-text-align: middle-left;
+    min-width: 70px;
+    letter-spacing: 1px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.unity-vector3-field__label:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.unity-color-field__input {
+}
+
+.unity-float-field__input {
+    min-width: 4px;
+    flex-shrink: 1;
+}
+
+.prefab_override_label {
+    -unity-font-style: bold;
+}
+
+.unity-toggle__input {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 5px;
+}
+
+.unity-binding--animation-animated {
+    background-color: rgb(23, 36, 42);
+}
+
+.unity-binding--animation-recorded {
+    background-color: rgb(42, 24, 23);
+}
+
+.unity-base-field__label {
+    -unity-text-align: middle-left;
+    min-width: 5px;
+}

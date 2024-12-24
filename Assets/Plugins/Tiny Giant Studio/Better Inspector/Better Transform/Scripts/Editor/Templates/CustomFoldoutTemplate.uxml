@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Plugins/Tiny%20Giant%20Studio/Better%20Inspector/Common%20Scripts/Editor/StyleSheets/CustomFoldout.uss?fileID=7433441132597879392&amp;guid=613d348a6fe013a408e4ee1a3631e627&amp;type=3#CustomFoldout" />
+    <ui:GroupBox name="TemplateRoot" class="custom-foldout" style="overflow: hidden; margin-top: 5px;">
+        <ui:GroupBox class="header" style="flex-direction: row-reverse; overflow: hidden;">
+            <ui:GroupBox name="RightSide" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-shrink: 1; justify-content: flex-end; flex-direction: row; overflow: hidden;" />
+            <ui:GroupBox name="LeftSide" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: stretch;">
+                <ui:Toggle name="FoldoutToggle" text="Parent" value="false" tooltip="Please note that the size of the parent/child isn&apos;t automatically updated here after the first opening it." class="unity-foldout__toggle" style="flex-grow: 1;" />
+                <ui:Label text="(1)" display-tooltip-when-elided="true" tooltip="Sibling Index" name="Label1" style="margin-left: 5px; margin-right: 5px; opacity: 0.5; -unity-font-style: italic;" />
+                <ui:Label text="(1)" display-tooltip-when-elided="true" tooltip="Sibling Index" name="Label2" style="margin-left: 5px; margin-right: 5px; opacity: 0.5; -unity-font-style: italic;" />
+            </ui:GroupBox>
+        </ui:GroupBox>
+        <ui:GroupBox name="Content" class="content" style="flex-direction: column; display: flex; background-color: rgba(255, 255, 255, 0.02); padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <uie:Toolbar name="EditorHeader" style="margin-left: -10px; margin-right: -10px; margin-top: -10px; margin-bottom: 0;">
+                <uie:ToolbarButton text="Ping" display-tooltip-when-elided="true" name="Ping" style="padding-left: 10px; padding-right: 10px;" />
+            </uie:Toolbar>
+            <ui:Button text="Open Editor" display-tooltip-when-elided="true" name="OpenEditorButton" style="display: flex;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
