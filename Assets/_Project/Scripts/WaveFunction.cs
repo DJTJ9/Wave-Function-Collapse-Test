@@ -14,6 +14,11 @@ public class WaveFunction : MonoBehaviour {
     int iterations = 0;
 
     void Awake() {
+        if (tileObjects == null || tileObjects.Length == 0) {
+            Debug.LogError("tileObjects ist leer oder null. Bitte initialisiere die Tile-Objekte im Editor.");
+            return;
+        }
+        
         gridComponents = new List<Cell>();
         InitializeGrid();
     }
@@ -22,7 +27,18 @@ public class WaveFunction : MonoBehaviour {
         for (int y = 0; y < dimensions; y++) {
             for (int x = 0; x < dimensions; x++) {
                 Cell newCell = Instantiate(cellObj, new Vector2(x, y), Quaternion.identity);
+                
+                if (newCell == null) {
+                    Debug.LogError($"Fehler beim Erstellen der Zelle an Position ({x}, {y}).");
+                    continue;
+                }
+                
                 newCell.CreateCell(false, tileObjects);
+                
+                if (newCell.tileOptions == null || newCell.tileOptions.Length == 0) {
+                    Debug.LogError($"Zelle an Position ({x}, {y}) hat keine gültigen Tile-Optionen.");
+                }
+                
                 gridComponents.Add(newCell);
             }
         }
@@ -35,6 +51,20 @@ public class WaveFunction : MonoBehaviour {
         List<Cell> tempGrid = new List<Cell>(gridComponents);
 
         tempGrid.RemoveAll(c => c.collapsed);
+        
+        // Prüfen, ob tempGrid leer ist
+        if (tempGrid.Count == 0) {
+            Debug.LogWarning("Alle Zellen sind bereits kollabiert. Verarbeitung beendet.");
+            yield break; // Coroutine vorzeitig beenden
+        }
+        
+        // Filtern: Nur Zellen mit gültigen Optionen behalten
+        tempGrid = tempGrid.Where(cell => cell.tileOptions != null && cell.tileOptions.Length > 0).ToList();
+
+        if (tempGrid.Count == 0) {
+            Debug.LogError("Keine Zellen mit gültigen tileOptions vorhanden. Es gibt kein weiteres Element zu verarbeiten.");
+            yield break; // Fehlerfall vorbeugen
+        }
 
         tempGrid.Sort((a, b) => { return a.tileOptions.Length - b.tileOptions.Length; });
 
@@ -58,9 +88,18 @@ public class WaveFunction : MonoBehaviour {
     }
 
     void CollapseCell(List<Cell> tempGrid) {
+        if (tempGrid == null || tempGrid.Count == 0) {
+            Debug.LogError("Keine Zellen übrig, die kollabiert werden können!");
+            return;
+        }
+        
         int randIndex = UnityEngine.Random.Range(0, tempGrid.Count);
-
         Cell cellToCollapse = tempGrid[randIndex];
+        
+        if (cellToCollapse.tileOptions == null || cellToCollapse.tileOptions.Length == 0) {
+            Debug.LogError("Fehler: Zelle zum Kollabieren hat keine gültigen Optionen!");
+            return;
+        }
 
         cellToCollapse.collapsed = true;
         Tile selectedTile = cellToCollapse.tileOptions[UnityEngine.Random.Range(0, cellToCollapse.tileOptions.Length)];

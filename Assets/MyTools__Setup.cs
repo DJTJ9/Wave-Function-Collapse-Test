@@ -12,7 +12,7 @@ using static UnityEditor.AssetDatabase;
 public static class Setup {
     [MenuItem("Tools/Setup/Create Default Folders")]
     public static void CreateDefaultFolders() {
-        Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "MyTools", "Prefabs", "ScriptableObjects", "ScriptableObjects/ScriptableValues", "Scripts", "Scripts/ScriptableObjects", "Settings", "Z______________________");
+        Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "MyTools", "Prefabs", "Scenes", "ScriptableObjects", "ScriptableObjects/ScriptableValues", "Scripts", "Scripts/ScriptableObjects", "Settings", "Z______________________");
         Refresh();
     }
 
