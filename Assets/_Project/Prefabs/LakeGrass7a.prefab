@@ -103,10 +103,20 @@ MonoBehaviour:
   upNeighbours:
   - {fileID: 5513563760797215115, guid: dbc470400c53b884e96dd4ba7932183d, type: 3}
   - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
-  rightNeighbours:
-  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
-  - {fileID: 3543332851969097110, guid: af5bebf5138c3cd45b6a574bdcbdf37c, type: 3}
+  - {fileID: 4670791632273420948, guid: 2044075d2be913c4484415026403e934, type: 3}
+  - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
+  - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
+  - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
+  - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
   downNeighbours:
   - {fileID: 8066695729126270429, guid: 53ab0211cdeff234a9ce0bff676f2525, type: 3}
   leftNeighbours:
   - {fileID: 8066695729126270429, guid: 53ab0211cdeff234a9ce0bff676f2525, type: 3}
+  rightNeighbours:
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: 3543332851969097110, guid: af5bebf5138c3cd45b6a574bdcbdf37c, type: 3}
+  - {fileID: 4670791632273420948, guid: 2044075d2be913c4484415026403e934, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}

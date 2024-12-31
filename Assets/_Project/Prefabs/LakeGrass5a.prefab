@@ -102,9 +102,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upNeighbours:
   - {fileID: 4842336390018714965, guid: e6e4fea7993faeb4db6931aeb49ce643, type: 3}
-  rightNeighbours:
-  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
   downNeighbours:
   - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
   leftNeighbours:
   - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  rightNeighbours:
+  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}
+  - {fileID: -316444000296519566}

@@ -103,10 +103,20 @@ MonoBehaviour:
   upNeighbours:
   - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
   - {fileID: 6635730968738576961, guid: b257aeb4bed57a94886f5c684850063e, type: 3}
-  rightNeighbours:
-  - {fileID: 8066695729126270429, guid: 53ab0211cdeff234a9ce0bff676f2525, type: 3}
+  - {fileID: 1202035585533858981, guid: e059413b6af89f040b47bfdc6b514ae4, type: 3}
+  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+  - {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
   downNeighbours:
   - {fileID: 8066695729126270429, guid: 53ab0211cdeff234a9ce0bff676f2525, type: 3}
   leftNeighbours:
   - {fileID: -8668436760246463046, guid: 00cca6cb581938a419e01041a095db8d, type: 3}
   - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: 1202035585533858981, guid: e059413b6af89f040b47bfdc6b514ae4, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  - {fileID: -8505876438386480973, guid: c13cbaf3491f1264ea6fcc3f7d88f3d7, type: 3}
+  rightNeighbours:
+  - {fileID: 8066695729126270429, guid: 53ab0211cdeff234a9ce0bff676f2525, type: 3}
