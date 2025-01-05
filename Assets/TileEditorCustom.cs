@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 [CustomEditor(typeof(Tile))]
 public class TileInspector : Editor
@@ -75,6 +76,25 @@ public class TileInspector : Editor
             AddSelectedPrefabsToArray(ref tile.rightNeighbours, addCount);
         }
         EditorGUILayout.EndHorizontal();
+        
+        EditorGUILayout.BeginHorizontal();
+        if (GUILayout.Button("Remove from UP"))
+        {
+            RemoveSelectedPrefabsFromArray(ref tile.upNeighbours, addCount);
+        }
+        if (GUILayout.Button("Remove from DOWN"))
+        {
+            RemoveSelectedPrefabsFromArray(ref tile.downNeighbours, addCount);
+        }
+        if (GUILayout.Button("Remove from LEFT"))
+        {
+            RemoveSelectedPrefabsFromArray(ref tile.leftNeighbours, addCount);
+        }
+        if (GUILayout.Button("Remove from RIGHT"))
+        {
+            RemoveSelectedPrefabsFromArray(ref tile.rightNeighbours, addCount);
+        }
+        EditorGUILayout.EndHorizontal();
 
         // Änderungen speichern
         if (GUI.changed)
@@ -115,6 +135,33 @@ public class TileInspector : Editor
                 for (int j = 0; j < count; j++)
                 {
                     newNeighbours.Add(prefabTile);
+                }
+            }
+        }
+
+        // Aktualisiere das Nachbarn-Array
+        neighbourArray = newNeighbours.ToArray();
+    }
+    
+    private void RemoveSelectedPrefabsFromArray(ref Tile[] neighbourArray, int count)
+    {
+        var newNeighbours = new List<Tile>(neighbourArray);
+
+        for (int i = 0; i < tilePrefabs.Count; i++)
+        {
+            if (selectedPrefabs[i]) // Nur ausgewählte Prefabs hinzufügen
+            {
+                var prefabTile = tilePrefabs[i].GetComponent<Tile>();
+                if (prefabTile == null)
+                {
+                    Debug.LogError($"Das Prefab {tilePrefabs[i].name} ist keine Tile-Komponente und wurde übersprungen.");
+                    continue;
+                }
+
+                // Das Prefab mehrfach hinzufügen
+                for (int j = 0; j < count; j++)
+                {
+                    newNeighbours.Remove(prefabTile);
                 }
             }
         }
