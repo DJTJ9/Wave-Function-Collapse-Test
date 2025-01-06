@@ -11,4 +11,16 @@ public class Tile : MonoBehaviour
     public Tile[] downNeighbours;
     public Tile[] leftNeighbours;
     public Tile[] rightNeighbours;
+    
+    public TileWeigthBundle[] upNeighbors;
+    public TileWeigthBundle[] downNeighbors;
+    public TileWeigthBundle[] leftNeighbors;
+    public TileWeigthBundle[] rightNeighbors;
+}
+
+[System.Serializable]
+public struct TileWeigthBundle
+{
+    public Tile Tile;
+    public int weigth;
 }

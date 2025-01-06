@@ -156,3 +156,9 @@ MonoBehaviour:
   - {fileID: 4922673939597571717, guid: a42bbab123123e942a66c8cfa7ef6147, type: 3}
   - {fileID: 4922673939597571717, guid: a42bbab123123e942a66c8cfa7ef6147, type: 3}
   - {fileID: 4922673939597571717, guid: a42bbab123123e942a66c8cfa7ef6147, type: 3}
+  upNeighbors:
+  - Tile: {fileID: 0}
+    weigth: 0
+  downNeighbors: []
+  leftNeighbors: []
+  rightNeighbors: []
