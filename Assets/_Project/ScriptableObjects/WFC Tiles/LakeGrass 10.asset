@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed477def64b7284fb892b6dbe40c98d, type: 3}
+  m_Name: LakeGrass 10
+  m_EditorClassIdentifier: 
+  Tile: {fileID: 6210715109046081969, guid: 0a6bd5fe9c1debf40af257863df8e124, type: 3}
+  Weight: 10
+  upNeighbors:
+  - {fileID: 11400000, guid: 74f6f4d704af31b47b58aaf3369e5f2b, type: 2}
+  - {fileID: 11400000, guid: ee0e2edd4f0373449933044fc6da667a, type: 2}
+  downNeighbors:
+  - {fileID: 11400000, guid: 2b3121e27b5e1b041932cae72f058dbd, type: 2}
+  leftNeighbors:
+  - {fileID: 11400000, guid: 74f6f4d704af31b47b58aaf3369e5f2b, type: 2}
+  - {fileID: 11400000, guid: 0f3268f2192a4c548bb6f2e2eeee32d1, type: 2}
+  rightNeighbors:
+  - {fileID: 11400000, guid: 2b3121e27b5e1b041932cae72f058dbd, type: 2}

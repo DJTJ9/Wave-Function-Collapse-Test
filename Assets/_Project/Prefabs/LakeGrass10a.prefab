@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b631a6303e91c604c9d2d50fa6567a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs: []
   upNeighbours:
   - {fileID: 5513563760797215115, guid: dbc470400c53b884e96dd4ba7932183d, type: 3}
   downNeighbours:
@@ -108,3 +109,7 @@ MonoBehaviour:
   - {fileID: 5513563760797215115, guid: dbc470400c53b884e96dd4ba7932183d, type: 3}
   rightNeighbours:
   - {fileID: -316444000296519566, guid: 83af843f241003d4f9448ea25837fcfd, type: 3}
+  upNeighbors: []
+  downNeighbors: []
+  leftNeighbors: []
+  rightNeighbors: []
