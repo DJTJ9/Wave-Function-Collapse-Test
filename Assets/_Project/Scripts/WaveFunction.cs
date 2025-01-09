@@ -82,7 +82,7 @@ public class WaveFunction : MonoBehaviour {
             tempGrid.RemoveRange(stopIndex, tempGrid.Count - stopIndex);
         }
 
-        yield return new WaitForSeconds(0.00001f);
+        yield return new WaitForSeconds(0.01f);
 
         CollapseCell(tempGrid);
     }

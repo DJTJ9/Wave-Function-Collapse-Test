@@ -351,3 +351,7 @@ MonoBehaviour:
   - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
   - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
   - {fileID: 1473055478548887845, guid: a6e20f0c5cf6e2444a33b33fd7710413, type: 3}
+  upNeighbors: []
+  downNeighbors: []
+  leftNeighbors: []
+  rightNeighbors: []

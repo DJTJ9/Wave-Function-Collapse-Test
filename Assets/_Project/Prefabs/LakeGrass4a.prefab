@@ -192,3 +192,7 @@ MonoBehaviour:
   - {fileID: 4552832042110925147, guid: 21c86d2a31a54e2478d1275c35f5e247, type: 3}
   rightNeighbours:
   - {fileID: -316444000296519566, guid: 83af843f241003d4f9448ea25837fcfd, type: 3}
+  upNeighbors: []
+  downNeighbors: []
+  leftNeighbors: []
+  rightNeighbors: []

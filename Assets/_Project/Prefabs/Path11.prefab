@@ -451,3 +451,7 @@ MonoBehaviour:
   - {fileID: 5806600768974825356}
   - {fileID: 5806600768974825356}
   - {fileID: 5806600768974825356}
+  upNeighbors: []
+  downNeighbors: []
+  leftNeighbors: []
+  rightNeighbors: []
