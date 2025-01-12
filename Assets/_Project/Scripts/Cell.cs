@@ -7,7 +7,7 @@ public class Cell : MonoBehaviour
     public TileSO[] tileOptions;
 
     public void CreateCell(bool collapseState, TileSO[] tiles) {
-        this.collapsed = collapsed;
+        this.collapsed = collapseState;
 
         // Fallback, falls tiles leer oder null ist
         if (tiles == null || tiles.Length == 0) {

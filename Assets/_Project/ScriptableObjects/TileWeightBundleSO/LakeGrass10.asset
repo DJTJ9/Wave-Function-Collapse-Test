@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eac8419fa628434e8a066436866213b, type: 3}
+  m_Name: LakeGrass10
+  m_EditorClassIdentifier: 
+  Tile:
+    Tile: {fileID: 6210715109046081969, guid: 0a6bd5fe9c1debf40af257863df8e124, type: 3}
+    Weight: 5
+  upNeighbors:
+  - Tile: {fileID: 5513563760797215115, guid: dbc470400c53b884e96dd4ba7932183d, type: 3}
+    Weight: 3
+  - Tile: {fileID: 1155010517974011934, guid: f2f71014dc526b54dacfba1989d5b012, type: 3}
+    Weight: 15
+  downNeighbors:
+  - Tile: {fileID: -316444000296519566, guid: 83af843f241003d4f9448ea25837fcfd, type: 3}
+    Weight: 30
+  leftNeighbors:
+  - Tile: {fileID: 5513563760797215115, guid: dbc470400c53b884e96dd4ba7932183d, type: 3}
+    Weight: 3
+  - Tile: {fileID: 4842336390018714965, guid: e6e4fea7993faeb4db6931aeb49ce643, type: 3}
+    Weight: 15
+  rightNeighbors:
+  - Tile: {fileID: -316444000296519566, guid: 83af843f241003d4f9448ea25837fcfd, type: 3}
+    Weight: 30

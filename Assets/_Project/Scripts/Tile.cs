@@ -11,9 +11,4 @@ public class Tile : MonoBehaviour
     public Tile[] downNeighbours;
     public Tile[] leftNeighbours;
     public Tile[] rightNeighbours;
-    
-    public TileSO[] upNeighbors;
-    public TileSO[] downNeighbors;
-    public TileSO[] leftNeighbors;
-    public TileSO[] rightNeighbors;
 }

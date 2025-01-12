@@ -11,10 +11,3 @@ public class TileSO : ScriptableObject
     public TileSO[] leftNeighbors;
     public TileSO[] rightNeighbors;
 }
-
-[System.Serializable]
-public struct TileWeigthBundle
-{
-    public Tile Tile;
-    public int weigth;
-}
